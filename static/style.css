@@ -16,3 +16,16 @@ a:hover, a:active {
 #console{
 left:75%;
 }
+input {
+  display: inline-block;
+  float: right;
+}
+input.no{
+position:fixed;
+bottom:0;
+}
+input.yes{
+position:absolute;
+bottom:0;
+right:0;
+}
