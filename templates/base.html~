@@ -1,8 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" type="text/css" href="style.css"></head>
+<link rel="stylesheet" type="text/css" href="../style.css"></head>
 <body>
 <a href= "/">Home</a>
+<form action="/" methods="POST">
+<div id="console">
+<input type="text" placeholder="Enter a command.">
+<input type = "submit" value="submit">
+</div>
+</form>
 </body>
 </html>

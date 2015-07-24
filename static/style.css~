@@ -1,5 +1,4 @@
 a:link, a:visited {
-
     display: block;
     font-weight: bold;
     color: #FFFFFF;
@@ -8,7 +7,6 @@ a:link, a:visited {
     text-align: center;
     padding: 4px;
     text-decoration: none;
-
 }
 
 a:hover, a:active {
