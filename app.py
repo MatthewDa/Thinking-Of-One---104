@@ -6,18 +6,28 @@ app = Flask( __name__ )
 
 @app.route('/', methods=["GET","POST"])
 def main():
-    return render_template('base.html')
-    form = request.form
-    uInput = form['asd']
-        if uInput == '':
-            inputTXT = 'fooooooo'
-            return render_template('base.html', inputTXT=inputTXT)
-        elif request.method == 'POST':
-            inputTXT = 'hello'
-            return render_template('base.html', inputTXT=inputTXT)
-        elif request.method == 'GET':
-            inputTXT = 'foo'
-            return render_template('base.html', inputTXT=inputTXT)
+
+    uInput = ''
+    if uInput == '':
+        inputTXT = uInput
+        return render_template('base.html', inputTXT=inputTXT)
+        aform = request.form
+        uInput = aform['asd']
+    elif request.method == 'GET':
+        inputTXT = 'foo'
+        return render_template('base.html', inputTXT=inputTXT)
+        aform = request.form
+        uInput = aform['asd']
+    elif uInput == '':
+        inputTXT = uInput
+        return render_template('base.html', inputTXT=inputTXT)
+        aform = request.form
+        uInput = aform['asd']
+    elif request.method == 'POST':
+        inputTXT = 'hello'
+        return render_template('base.html', inputTXT=inputTXT)
+        aform = request.form
+        uInput = aform['asd']
 
 if __name__ == '__main__':
     app.debug = True
