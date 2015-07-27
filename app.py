@@ -15,7 +15,6 @@ def main():
         return render_template('base.html', inputTXT=inputTXT)
         aform = request.form
         uInput = aform['asd']
-        
     elif request.method == 'GET':
         aform = request.form
         uInput = aform['asd']
@@ -23,7 +22,7 @@ def main():
         return render_template('base.html', inputTXT=inputTXT)
         aform = request.form
         uInput = aform['asd']
-    elif uInput
+    elif uInput:
         aform = request.form
         uInput = aform['asd']
         inputTXT = uInput
