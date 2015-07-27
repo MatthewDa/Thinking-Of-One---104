@@ -21,8 +21,10 @@
 	<div id= "output">
 
 		<p>{{inputTXT}}STUFF</p></br>
+<<<<<<< HEAD
+=======
 
-		<textarea style="border:none" rows="25" cols="105" spellcheck="false">{{inputTXT}}STUFF</textarea><br>
+>>>>>>> 34c4102a0f587b63f4f1f392b64cdf2186752e58
 	</div>
 
 	<form action="/" action = "processname.cgi" methods="POST" >
