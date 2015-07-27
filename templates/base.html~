@@ -7,7 +7,7 @@
 
 <body>
 	<div id= "title">
-		<center><h2><b>Filler title name.</b></h2></center>
+		<center><h2><b>Darkness of Word</b></h2></center>
 	</div>
 	
 	<div id= "sidebar">
@@ -18,7 +18,8 @@
 	</div>
 
 	<div id= "output">
-		<textarea style="border:none" rows="25" cols="105" spellcheck="false">{{stuff}}STUFF</textarea>
+		<textarea style="border:none" rows="25" cols="105" spellcheck="false">{{stuff}}STUFF</textarea></br>
+		{{inputTXT}}
 	</div>
 
 	<form action="/" methods="POST">
