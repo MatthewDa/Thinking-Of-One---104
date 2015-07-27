@@ -115,9 +115,9 @@ def demo(uinput):
     str2 = typewrite('I see you want ' + item + '.', interval=.25)
     return str1, str2
 
-def returnTXT():
-    uInput = request.form
-    inputTXT = uInput['asd']
-##    inputTXT = "foo"
-    return inputTXT
+##def returnTXT():
+##    uInput = request.form
+##    inputTXT = uInput['asd']
+####    inputTXT = "foo"
+##    return inputTXT
 
