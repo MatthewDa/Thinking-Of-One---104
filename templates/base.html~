@@ -14,11 +14,15 @@
 		<a href= "/">Home</a>
 		<a href= "/">Inventory</a>
 		<a href= "/">Save Game</a>
+		<a href= "/">{{inputTXT}}</a>
 		<a href= "/">Settings</a>
 	</div>
 
 	<div id= "output">
-		<textarea style="border:none" rows="25" cols="105" spellcheck="false">{{inputTXT}}STUFF</textarea></br>
+
+		<p>{{inputTXT}}STUFF</p></br>
+
+		<textarea style="border:none" rows="25" cols="105" spellcheck="false">{{inputTXT}}STUFF</textarea><br>
 	</div>
 
 	<form action="/" action = "processname.cgi" methods="POST" >
@@ -27,6 +31,8 @@
 			<center><input type="text" name='asd' placeholder="Enter a command." size="55" class="no" ></center>
 		</div>
 	</form>
+	<script>
 
+</script>
 </body>
 </html>
