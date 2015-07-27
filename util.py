@@ -115,13 +115,9 @@ def demo(uinput):
     str2 = typewrite('I see you want ' + item + '.', interval=.25)
     return str1, str2
 
-def prompts():
-    alert('This displays some text with an OK button.')
-    confirm('This displays text and has an OK and Cancel button.')
-    prompt = prompt('This lets the user type in a string and press OK.')
-
 def returnTXT():
-    form = cgi.FieldStorage()
-    inputTXT =  form.getlist('console')
+    uInput = request.form
+    inputTXT = uInput['asd']
+##    inputTXT = "foo"
     return inputTXT
 
