@@ -1,5 +1,6 @@
 import time
 import sys
+import cgi
 
 KEY_NAMES = ['\t', '\n', '\r', ' ', '!', '"', '#', '$', '%', '&', "'", '(',
      ')', '*', '+', ',', '-', '.', '/', '0', '1', '2', '3', '4', '5', '6', '7',
@@ -106,3 +107,18 @@ def typewrite(message, interval=0.1, pause=True, _pause=True):
     elif _pause and PAUSE != 0:
         time.sleep(PAUSE)
 
+def demo(uinput):
+    item = uinput
+    typewrite('Hello, traveler.', interval=0.1)
+    press('enter', interval=1)
+    typewrite('I see you want ' + item + '.', interval=.25)
+
+def prompts():
+    alert('This displays some text with an OK button.')
+    confirm('This displays text and has an OK and Cancel button.')
+    prompt = prompt('This lets the user type in a string and press OK.')
+
+def returnTXT():
+    form = cgi.FieldStorage()
+    inputTXT =  form.getvalue('submit')
+    print inputTXT
