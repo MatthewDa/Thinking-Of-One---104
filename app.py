@@ -7,7 +7,7 @@ app = Flask( __name__ )
 @app.route('/', methods=["GET","POST"])
 def main():
     return render_template('base.html',inputTXT=returnTXT())
-
+    
 @app.route('/debug', methods=["GET","POST"])
 def debug():
     return 'hello'
