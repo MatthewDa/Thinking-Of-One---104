@@ -31,11 +31,11 @@ if sys.platform.startswith('java'):
     #import pyautogui._pyautogui_java as platformModule
     raise NotImplementedError('Jython is not yet supported by PyAutoGUI.')
 elif sys.platform == 'darwin':
-    import pyautogui._pyautogui_osx as platformModule
+    import _pyautogui_osx as platformModule
 elif sys.platform == 'win32':
-    import pyautogui._pyautogui_win as platformModule
+    import _pyautogui_win as platformModule
 else:
-    import pyautogui._pyautogui_x11 as platformModule
+    import _pyautogui_x11 as platformModule
 
 def press(keys, presses=1, interval=0.0, pause=True, _pause=True):
     """Performs a keyboard key press down, followed by a release.
