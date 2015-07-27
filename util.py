@@ -26,17 +26,17 @@ KEY_NAMES = ['\t', '\n', '\r', ' ', '!', '"', '#', '$', '%', '&', "'", '(',
      'command', 'option', 'optionleft', 'optionright']
 KEYBOARD_KEYS = KEY_NAMES   # keeping old KEYBOARD_KEYS for backwards compatibility
 
-
-if sys.platform.startswith('java'):
-    #import pyautogui._pyautogui_java as platformModule
-    raise NotImplementedError('Jython is not yet supported by PyAutoGUI.')
-elif sys.platform == 'darwin':
-    import pyautogui._pyautogui_osx as platformModule
-elif sys.platform == 'win32':
-    import pyautogui._pyautogui_win as platformModule
-else:
-    import pyautogui._pyautogui_x11 as platformModule
-
+##
+##if sys.platform.startswith('java'):
+##    #import pyautogui._pyautogui_java as platformModule
+##    raise NotImplementedError('Jython is not yet supported by PyAutoGUI.')
+##elif sys.platform == 'darwin':
+##    import pyautogui._pyautogui_osx as platformModule
+##elif sys.platform == 'win32':
+##    import pyautogui._pyautogui_win as platformModule
+##else:
+##    import pyautogui._pyautogui_x11 as platformModule
+##
 def press(keys, presses=1, interval=0.0, pause=True, _pause=True):
     """Performs a keyboard key press down, followed by a release.
 
@@ -62,6 +62,7 @@ def press(keys, presses=1, interval=0.0, pause=True, _pause=True):
             else:
                 lowerKeys.append(s)
     interval = float(interval)
+
     for i in range(presses):
         for k in keys:
             platformModule._keyDown(k)
@@ -109,9 +110,10 @@ def typewrite(message, interval=0.1, pause=True, _pause=True):
 
 def demo(uinput):
     item = uinput
-    typewrite('Hello, traveler.', interval=0.1)
-    press('enter', interval=1)
-    typewrite('I see you want ' + item + '.', interval=.25)
+    str1 = typewrite('Hello, traveler.', interval=0.1)
+    ##press('enter', interval=1)
+    str2 = typewrite('I see you want ' + item + '.', interval=.25)
+    return str1, str2
 
 def prompts():
     alert('This displays some text with an OK button.')
@@ -121,4 +123,4 @@ def prompts():
 def returnTXT():
     form = cgi.FieldStorage()
     inputTXT =  form.getvalue('submit')
-    print inputTXT
+    return inputTXT

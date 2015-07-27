@@ -1,15 +1,17 @@
 from flask import Flask, render_template, request
 import datetime
-import util
+from util import *
 
 app = Flask( __name__ )
 
-@app.route('/')
-
+@app.route('/', methods=["GET","POST"])
 def main():
-    return render_template('base.html', inputTXT=returnTXT())
+    return render_template('base.html',inputTXT=returnTXT())
+
+@app.route('/debug', methods=["GET","POST"])
+def debug():
+    return 'hello'
 
 if __name__ == '__main__':
     app.debug = True
     app.run( port = 4269 )
-
