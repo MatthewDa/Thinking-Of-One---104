@@ -18,7 +18,7 @@
 	</div>
 
 	<div id= "output">
-		<textarea style="border:none" rows="25" cols="105" spellcheck="false">{{stuff}}STUFF</textarea></br>
+		<textarea contenteditable="false" style="border:none" rows="25" cols="105" spellcheck="false">{{stuff}}STUFF</textarea></br>
 		{{inputTXT}}
 	</div>
 
