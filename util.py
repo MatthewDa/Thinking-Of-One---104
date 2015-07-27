@@ -124,3 +124,4 @@ def returnTXT():
     form = cgi.FieldStorage()
     inputTXT =  form.getlist('console')
     return inputTXT
+
