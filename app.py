@@ -9,16 +9,23 @@ def main():
 
     uInput = ''
     if uInput == '':
+        aform = request.form
+        uInput = aform['asd']
         inputTXT = uInput
         return render_template('base.html', inputTXT=inputTXT)
         aform = request.form
         uInput = aform['asd']
+        
     elif request.method == 'GET':
+        aform = request.form
+        uInput = aform['asd']
         inputTXT = 'foo'
         return render_template('base.html', inputTXT=inputTXT)
         aform = request.form
         uInput = aform['asd']
-    elif uInput == '':
+    elif uInput
+        aform = request.form
+        uInput = aform['asd']
         inputTXT = uInput
         return render_template('base.html', inputTXT=inputTXT)
         aform = request.form
