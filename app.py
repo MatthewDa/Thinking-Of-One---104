@@ -1,16 +1,16 @@
 from flask import Flask, render_template, request
 import datetime
-from util import *
 
-app = Flask( __name__ )
+app = Flask(__name__)
 
-@app.route('/', methods=["GET","POST"])
+@app.route('/', methods=["POST","GET"])
 def main():
-
-    inputTXT='foo'
-    return render_template('base.html', inputTXT=inputTXT)
-    aform = request.form
-    inputTXT = aform['asd']
+    if request.method == "GET":
+        return render_template('xbasex.html', TXT="PlayerName")
+    else:
+        input_text = request.form
+        inputTXT = input_text['poop']
+        return render_template('xbasex.html', x=inputTXT, TXT = "Playername")
 
 if __name__ == '__main__':
     app.debug = True
