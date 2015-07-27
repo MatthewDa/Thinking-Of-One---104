@@ -10,7 +10,7 @@ a:link, a:visited {
     vertical-align:middle; 
     padding: 4px;
     text-decoration: none;
-    
+    line-height:4;
 }
 
 a:hover, a:active {
@@ -45,5 +45,9 @@ input.yes{
 position:absolute;
 bottom:0;
 right:10%;
+}
+#id{
+width:764px;
+height:401px;
 }
 
