@@ -10,7 +10,7 @@ def main():
     
 @app.route('/debug', methods=["GET","POST"])
 def debug():
-    return 'hello'
+    return
 
 if __name__ == '__main__':
     app.debug = True

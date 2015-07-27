@@ -122,5 +122,5 @@ def prompts():
 
 def returnTXT():
     form = cgi.FieldStorage()
-    inputTXT =  form.getvalue('submit')
+    inputTXT =  form.getlist('console')
     return inputTXT
