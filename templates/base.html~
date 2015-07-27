@@ -7,13 +7,13 @@
 <center><h2><b>Filler title name.</b></h2></center>
 </div>
 <div id= "sidebar">
-<a href= "/">Home</a>
-<a href= "/">Inventory</a>
-<a href= "/">Save Game</a>
-<a href= "/">Settings</a>
+<a href= "/" class="box">Home</a>
+<a href= "/" class="box">Inventory</a>
+<a href= "/" class="box">Save Game</a>
+<a href= "/" class="box">Settings</a>
 </div>
 <div id= "output">
-<p>{{stuff}}</p>
+<p>{{stuff}}STUFF</p>
 </div>
 <form action="/" methods="POST">
 <div id="console">
