@@ -7,11 +7,14 @@ inputTXT = ''
 
 @app.route('/', methods=["POST","GET"])
 def main():
+    inputTXT = []
     if request.method == "GET":
         return render_template('xbasex.html', TXT="PlayerName")
     else:
         input_text = request.form
-        inputTXT = input_text['uInput']
+        append_file('log.txt')
+        inputTXT.append(input_text['uInput'])
+        print len(inputTXT)
         return render_template('xbasex.html', x=inputTXT, TXT = "Playername")
 
 if __name__ == '__main__':

@@ -11,6 +11,7 @@ a:link, a:visited {
     padding: 4px;
     text-decoration: none;
     line-height:4;
+    font-family:Ubuntu-mono;
 }
 
 a:hover, a:active {

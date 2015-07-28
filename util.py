@@ -10,3 +10,9 @@ def delay_type(str, interval):
     for letter in str:
         sys.stdout.write(letter)
         time.sleep(interval)
+
+def append_file( fname ):
+    f = open( fname, 'a' )
+    text = f.read()
+    f.close()
+    return text
