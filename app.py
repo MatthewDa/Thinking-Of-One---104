@@ -14,7 +14,7 @@ def main():
         input_text = request.form
         inputTXT = input_text['uInput']
         append_file('log.txt', inputTXT)
-        inputTXT = open_file('log.txt', inputTXT)
+        #inputTXT = open_file('log.txt', inputTXT)
         return render_template('xbasex.html', x=inputTXT, TXT = "Playername")
 
 if __name__ == '__main__':
