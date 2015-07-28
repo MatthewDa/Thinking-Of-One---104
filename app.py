@@ -11,7 +11,7 @@ def main():
         return render_template('xbasex.html', TXT="PlayerName")
     else:
         input_text = request.form
-        inputTXT = input_text['poop']
+        inputTXT = input_text['uInput']
         return render_template('xbasex.html', x=inputTXT, TXT = "Playername")
 
 if __name__ == '__main__':
