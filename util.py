@@ -11,8 +11,24 @@ def delay_type(str, interval):
         sys.stdout.write(letter)
         time.sleep(interval)
 
-def append_file( fname ):
+def append_file( fname, text ):
     f = open( fname, 'a' )
-    text = f.read()
+    f.write(text+'\n')
     f.close()
-    return text
+
+def open_file( fname, var ):
+    f = open( fname, 'r' )
+    var = f.read()
+    f.close()
+
+def parse():
+    f = open( 'Commands.txt', 'r' )
+    text = f.read()
+    text = text.split(',')
+    f.close()
+    #return text
+    inputTXT = 'down'
+    if inputTXT == text:
+        return 'hi'
+    else:
+        return 'Really?'

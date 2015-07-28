@@ -12,9 +12,9 @@ def main():
         return render_template('xbasex.html', TXT="PlayerName")
     else:
         input_text = request.form
-        append_file('log.txt')
-        inputTXT.append(input_text['uInput'])
-        print len(inputTXT)
+        inputTXT = input_text['uInput']
+        append_file('log.txt', inputTXT)
+        inputTXT = open_file('log.txt', inputTXT)
         return render_template('xbasex.html', x=inputTXT, TXT = "Playername")
 
 if __name__ == '__main__':
