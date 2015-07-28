@@ -7,10 +7,9 @@ inputTXT = ''
 
 @app.route('/', methods=["GET","POST"])
 def main():
-    inputTXT = []
     aform = request.form
-    inputTXT = inputTXT.append(aform['asd'])
-    return render_template('base.html', inputTXT=inputTXT)
+    inputTXT = inputTXT.append(aform['poop'])
+    return render_template('xbasex.html', inputTXT=inputTXT)
     
 if __name__ == '__main__':
     app.debug = True
