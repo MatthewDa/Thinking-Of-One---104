@@ -1,1 +1,1 @@
-Commands: up/north,down/south,left/west,right/east, look, throw, use, buy 
+Commands: up/north, down/south, left/west, right/east, look, throw, use, buy 

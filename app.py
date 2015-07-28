@@ -5,13 +5,15 @@ from util import *
 app = Flask( __name__ )
 inputTXT = ''
 
-@app.route('/', methods=["GET","POST"])
+@app.route('/', methods=["POST","GET"])
 def main():
-    inputTXT = []
-    aform = request.form
-    inputTXT = inputTXT.append(aform['asd'])
-    return render_template('base.html', inputTXT=inputTXT)
-    
+    if request.method == "GET":
+        return render_template('xbasex.html', TXT="PlayerName")
+    else:
+        input_text = request.form
+        inputTXT = input_text['poop']
+        return render_template('xbasex.html', x=inputTXT, TXT = "Playername")
+
 if __name__ == '__main__':
     app.debug = True
-    app.run( port = 4269 )
+    app.run()
