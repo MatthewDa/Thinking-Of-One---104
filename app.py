@@ -245,7 +245,7 @@ def maze():
             bot += "<a href= '/maze/'>Try again?</a>"
         if inputTXT == "falcon path":
             bot = "You take the right path again and continue onwards into the maze."
-            story = "You are almost to your golden shovel!!! The last two paths appear before you:"
+            story = "You are almost to your golden shovel!!! The last two paths appear before you: the sloth and the "
 
         
         
@@ -256,4 +256,4 @@ def maze():
 
 if __name__ == '__main__':
     app.debug = True
-    app.run( port = 8104, host = '0.0.0.0')
+    app.run( host = '0.0.0.0')
