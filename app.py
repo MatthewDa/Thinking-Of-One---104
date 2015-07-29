@@ -8,11 +8,7 @@ commands = 'Valid commands include up, down, left, right, look, use, help, open,
 
 @app.route('/', methods=["GET"])
 def main():
-    inputTXT = ''
-    outputTXT = ''
-    story = ''
     user = 'fooman'
-    bot = ''
     return render_template('main.html', TXT=user)    
 
 @app.route('/basement/', methods=["POST","GET"])
@@ -245,15 +241,31 @@ def maze():
             bot += "<a href= '/maze/'>Try again?</a>"
         if inputTXT == "falcon path":
             bot = "You take the right path again and continue onwards into the maze."
-            story = "You are almost to your golden shovel!!! The last two paths appear before you: the sloth and the "
+            story = "You are almost to your golden shovel!!! The last two paths appear before you: the sloth and the hedgehog."
 
-        
-        
+        if inputTXT == "sloth path":
+            bot = "You take the sloth path and you step on a boobytrap. It automatically kills you by creepy old men."
+            bot += "<a href= '/maze/'>Try again?</a>"
+        if inputTXT == "hedgehog path":
+            bot = "You have succeeded in navigating through the maze. You can now take your golden shovel home and marvel in its shinyness."
+            story = "The golden shovel is ready for you."
+        if inputTXT == "get golden shovel":
+            bot = "You became the master shoveler."
+            bot += "<a href= '/'>Play Again></a>"
+            bot += "<a href= '/shovels/'>Shovel! End</a>"
+            
         append_file('log.txt', inputTXT, bot )
         outputTXT = open_file( 'log.txt', outputTXT)
 
         return render_template('base_.html', story = story, out = outputTXT, TXT = user)
 
+@app.route('/shovels/', methods=["POST","GET"])
+def shovels():
+    
+    user = 'fooman'
+    return render_template('shovels.html', TXT=user)    
+
+    
 if __name__ == '__main__':
     app.debug = True
-    app.run( host = '0.0.0.0')
+    app.run( host = '0.0.0.0' )
