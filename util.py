@@ -13,7 +13,7 @@ def delay_type(str, interval):
 
 def append_file( fname, text ):
     f = open( fname, 'a' )
-    f.write(text+'\n')
+    f.write(text+'<br>\n')
     f.close()
 
 def open_file( fname, var ):
@@ -21,16 +21,14 @@ def open_file( fname, var ):
     var = f.read()
     return var
 
-def parse(var):
+def parse(var='use'):
     f = open( 'Commands.txt', 'r' )
     text = f.read()
     text = text.split(',')
     f.close()
     cmnds = "Valid commands include " + ', '.join(text) + '.'
-    
     i = 0
     while i <= len(text):
-        #for commands in text:
         try:
             if var == 'help':
                 return cmnds
