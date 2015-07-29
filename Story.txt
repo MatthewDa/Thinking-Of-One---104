@@ -23,3 +23,6 @@ You exit the city and find a inn atop a hillside. You enter and decide to stay f
 You wander about and find a mansion. You enter the mansion, looking around you. You see lots of furniture, however, covered with blankets of dust and infested with small insects. You believe that this place is abandoned, however, it is not abandoned as it seems. You encounter ghosts and ghouls in the mansion which u must fend off. You can attack the ghosts with the item you retrieve from the city. 
 ///Dying at this point brings you back to a Game Over screen where you can go back to a previously saved file or start back from the beginning.///
 ///All monsters drop items and are randomly generated///
+---Chapter 5- Seeing the End ---
+After exiting the mansion, you look off into the distance and see a horde of monsters approach you. You fight each until you get to the Final Boss. After beating the Final Boss, you are treated to an end screen which congratulates you on beating the game. 
+///Probably has a button to go back to the home page and a button to play again///
