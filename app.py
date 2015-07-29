@@ -244,7 +244,7 @@ def maze():
         if inputTXT == "fox path":
             bot = "You take the fox path and your eyes are scratched out by a fox. You die."
             bot += "<a href= '/maze/'>Try again?</a>"
-        i
+        
         append_file('log.txt', inputTXT, bot )
         outputTXT = open_file( 'log.txt', outputTXT)
 
