@@ -18,12 +18,10 @@ def append_file( fname, text ):
 
 def open_file( fname, var ):
     f = open( fname, 'r' )
-    g = f.read()
-    h = g.split('\n')
-    var = ' '.join(h)
-    f.close()
+    var = f.read()
     return var
-def parse(var='use'):
+
+def parse(var):
     f = open( 'Commands.txt', 'r' )
     text = f.read()
     text = text.split(',')

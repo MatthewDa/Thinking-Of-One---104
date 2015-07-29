@@ -11,41 +11,40 @@ a:link, a:visited {
     padding: 4px;
     text-decoration: none;
     line-height:4;
-    font-family:Ubuntu-mono;
 }
 
 a:hover, a:active {
     background-color: #5685A3;
 }
 #title{
-color:#E7C8DD
+    color:#E7C8DD;
 }
 #sidebar{
-float:left;
-width:20%;
-height:20%;
+    float:left;
+    width:20%;
+    height:20%;
 }
 #output{
-float:left;
-width:60%;
-height:400px;
+    float:left;
+    width:60%;
+    height:400px;
 }
 #console{
-left:75%;
+    left:75%;
 }
 input {
-  display: inline-block;
-  float: right;
+    display: inline-block;
+    float: right;
 }
 input.no{
-position:fixed;
-bottom:0;
-right:20%;
+    position:fixed;
+    bottom:0;
+    right:20%;
 }
 input.yes{
-position:absolute;
-bottom:0;
-right:10%;
+    position:absolute;
+    bottom:0;
+    right:10%;
 }
 
 
