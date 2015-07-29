@@ -16,9 +16,8 @@ def main():
         input_text = request.form
         inputTXT = input_text['uInput']
         append_file('log.txt', inputTXT)
-        
         outputTXT = open_file( 'log.txt', outputTXT )
-        print outputTXT
+
         return render_template('xbasex.html', x=outputTXT, TXT = user)
 
 if __name__ == '__main__':

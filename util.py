@@ -23,19 +23,22 @@ def open_file( fname, var ):
     var = ' '.join(h)
     f.close()
     return var
-def parse():
+def parse(var='use'):
     f = open( 'Commands.txt', 'r' )
     text = f.read()
     text = text.split(',')
     f.close()
-    inputTXT = 'use'
+    cmnds = "Valid commands include " + ', '.join(text) + '.'
+    
     i = 0
     while i <= len(text):
         #for commands in text:
-        if inputTXT != text[i] or i > len(text):
-            return 'foo'
-        elif inputTXT == text[i]:
-            return 'hi'
-        elif inputTXT != text[i] and i <= len(text):
-            i +=1
-        
+        try:
+            if var == 'help':
+                return cmnds
+            elif var == text[i]:
+                return True
+            elif var != text[i] and i <= len(text):
+                i +=1
+        except IndexError:
+            return "That's an invalid command. Type help for commands."
