@@ -28,10 +28,14 @@ def parse():
     text = f.read()
     text = text.split(',')
     f.close()
-    return text
-    #return text
-    inputTXT = 'down'
-    if inputTXT == text:
-        return 'hi'
-    else:
-        return 'Really?'
+    inputTXT = 'use'
+    i = 0
+    while i <= len(text):
+        #for commands in text:
+        if inputTXT != text[i] or i > len(text):
+            return 'foo'
+        elif inputTXT == text[i]:
+            return 'hi'
+        elif inputTXT != text[i] and i <= len(text):
+            i +=1
+        

@@ -9,7 +9,7 @@ inputTXT = ''
 def main():
     inputTXT = []
     outputTXT = ''
-    user = ''
+    user = 'fooman'
     if request.method == "GET":
         return render_template('xbasex.html', TXT=user)
     else:
@@ -20,20 +20,6 @@ def main():
         outputTXT = open_file( 'log.txt', outputTXT )
         print outputTXT
         return render_template('xbasex.html', x=outputTXT, TXT = user)
-
-@app.route('/name/', methods=["POST","GET"])
-def user_get():
-    user = ''
-    if request.method == "GET":
-        return render_template('user.html', TXT="PlayerName")
-    else:
-        input_user = request.form
-        user = input_user['user']
-        append_file('save.txt', user)
-##    
-##        outputTXT = open_file( 'log.txt', outputTXT )
-##        print outputTXT
-##        return render_template('xbasex.html', x=outputTXT, TXT = user)
 
 if __name__ == '__main__':
     app.debug = True
