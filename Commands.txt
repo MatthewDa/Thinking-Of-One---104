@@ -1,1 +1,1 @@
-up,down,left,right,look,throw,use,help,eat
+up,down,left,right,look,throw,use,help,eat,clear,get

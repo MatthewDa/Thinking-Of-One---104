@@ -11,9 +11,10 @@ def delay_type(str, interval):
         sys.stdout.write(letter)
         time.sleep(interval)
 
-def append_file( fname, text ):
+def append_file( fname, text, bot):
     f = open( fname, 'a' )
-    f.write(text+'<br>\n')
+    f.write( '>>>' + text + '<br>\n' )
+    f.write( bot + '<br>\n' )
     f.close()
 
 def open_file( fname, var ):
@@ -21,7 +22,12 @@ def open_file( fname, var ):
     var = f.read()
     return var
 
-def parse(var='use'):
+def clear_file():
+    f = open( 'log.txt', 'w' )
+    f.write( '' )
+    f.close()
+
+def parse(var, var2):
     f = open( 'Commands.txt', 'r' )
     text = f.read()
     text = text.split(',')
@@ -31,10 +37,11 @@ def parse(var='use'):
     while i <= len(text):
         try:
             if var == 'help':
-                return cmnds
+                var2 = cmnds
+            elif var == 'clear':
+                clear_file()
             elif var == text[i]:
                 return True
-            elif var != text[i] and i <= len(text):
-                i +=1
-        except IndexError:
+            
+        except IndexError or UnboundLocalError:
             return "That's an invalid command. Type help for commands."
