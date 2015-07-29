@@ -232,18 +232,22 @@ def maze():
         if inputTXT == 'look':
             bot = "You see two paths ahead of you."
             story = "There are two paths ahead of you: a red path and a blue path. Each path will lead you somewhere."
+
         if inputTXT == 'blue path':
             bot = "You take the blue path and get ambushed by bandits. You die."
             bot += "<a href= '/maze/'>Try again?</a>"
         if inputTXT == 'red path':
             bot = "You take the right path and continue onwards into the maze."
             story = "Two more paths appear ahead of you now: a path that has a sign with an emblem of a falcon and a path that has a sign with an emblem of a fox. Each path will lead you somewhere."
-        if inputTXT == "falcon path":
-            bot = "You take the right path again and continue onwards into the maze."
-            story = "You are almost to your golden shovel!!! The last two paths appear before you:"
+
         if inputTXT == "fox path":
             bot = "You take the fox path and your eyes are scratched out by a fox. You die."
             bot += "<a href= '/maze/'>Try again?</a>"
+        if inputTXT == "falcon path":
+            bot = "You take the right path again and continue onwards into the maze."
+            story = "You are almost to your golden shovel!!! The last two paths appear before you:"
+
+        
         
         append_file('log.txt', inputTXT, bot )
         outputTXT = open_file( 'log.txt', outputTXT)
@@ -252,4 +256,4 @@ def maze():
 
 if __name__ == '__main__':
     app.debug = True
-    app.run()
+    app.run( port = 8104, host = '0.0.0.0')
