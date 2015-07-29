@@ -1,1 +1,1 @@
-up,down,left,right,look,throw,use,help,eat,clear,get
+Valid commands include up, down, left, right, look, use, help, open, clear, and get.

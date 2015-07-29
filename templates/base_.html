@@ -11,19 +11,16 @@
     
     	<div id= "sidebar">
         	<a href= "/">Home</a>
-        	<a href= "/">Inventory</a>
-        	<a href= "/">Save Game</a>
         	<a href= "/">{{TXT}}</a>
-        	<a href= "/">Settings</a>
     	</div>
     
     	<div id = "output">
-    		<h1>{{TXT}}</h1>
-    		<h4>{{x}}</h4>
+    		<h3>{{story|safe}}</h3>
+    		<h4>{{out|safe}}</h4>
     	</div>
     
-   		<form action="/" method="POST">
-    	    <center><input type="text" name="user" placeholder="Enter a name." size="55" class="no">
+   		<form action="/maze/" method="POST">
+    	    <center><input type="text" name="uInput" placeholder="Enter a command." size="55" class="no">
         	</center>
                 <input type = "submit" value="submit" class="yes">
     	</form>

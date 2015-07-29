@@ -27,21 +27,21 @@ def clear_file():
     f.write( '' )
     f.close()
 
-def parse(var, var2):
+def commands(var):
     f = open( 'Commands.txt', 'r' )
     text = f.read()
     text = text.split(',')
     f.close()
-    cmnds = "Valid commands include " + ', '.join(text) + '.'
-    i = 0
-    while i <= len(text):
-        try:
-            if var == 'help':
-                var2 = cmnds
-            elif var == 'clear':
-                clear_file()
-            elif var == text[i]:
-                return True
-            
-        except IndexError or UnboundLocalError:
-            return "That's an invalid command. Type help for commands."
+    var = "Valid commands include " + ', '.join(text) + '.'
+    return var
+##    while i <= len(text):
+##        try:
+##            if var == 'help':
+##                var2 = cmnds
+##            elif var == 'clear':
+##                clear_file()
+##            elif var == text[i]:
+##                return True
+##            
+##        except IndexError or UnboundLocalError:
+##            return "That's an invalid command. Type help for commands."

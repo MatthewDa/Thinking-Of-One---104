@@ -16,19 +16,18 @@ You find that you are in a shed and scavenge the items around you. You exit the 
 ---Can't escape monster. Automated fight---
 You find yourself confused as to where you are. You find that it is night and you are stuck in the woods. As you walk around the woods, you find yourself items to equip: stick and boot.
 --- Beginner items..... can't skip these items---
- As you equip these items, you hear the howling of a wolf as it approaches you. Fighting it Bear. Fighting and winning the fight will allow you to leave the area to the city.
+ As you equip these items, you hear the howling of a wolf as it approaches you. You fight it and fight other animals like bears and snakes. You wander the area and try to find a way out. You encounter an armored Bear near the exit. Fighting and winning the fight will allow you to leave the area to the city.
 
 
 ---Chapter Three - The Abandoned City ---
- You enter the city and find that it is abandoned. You can scavenge the area for essentials such as water and food. Using thses items will refill your hp. However, you hear heavy grunting and breathing. You look outside and find the city infested with zombies. You must fight you way out of the city with everything you have. There are a variety of zombies in the city whom you must defeat. There is no boss in this area so you can leave anytime you want. However there is an item you need from this place, which you would need later.
-
+ You enter the city and find that it is abandoned. You can scavenge the area for essentials such as water and food. Using these items will refill your hp. However, you hear heavy grunting and breathing. You look outside and find the city infested with zombies. You must fight you way out of the city with everything you have. There are a variety of zombies in the city whom you must defeat. There is no boss in this area so you can leave anytime you want. However there is an item you need from this place, which you would need later.
 
 ---Chapter 3.5- The Inn ---
 You exit the city and find a inn atop a hillside. You enter and decide to stay for the night here. ///Save File Unlocked /// You wake back up in the morning and continue your adventure.
 
 
 --- Chapter 4 - The Mansion ---
-You wander about and find a mansion. You enter the mansion, looking around you. You see lots of furniture, however, covered with blankets of dust and infested with small insects. You believe that this place is abandoned, however, it is not abandoned as it seems. You encounter ghosts and ghouls in the mansion which u must fend off. You can attack the ghosts with the item you retrieve from the city. 
+You wander about and find a mansion. You enter the mansion, looking around you. You see lots of furniture, covered with blankets of dust and infested with small insects. You believe that this place is abandoned, however, it is not abandoned as it seems. You encounter ghosts and ghouls in the mansion which u must fend off. You can attack the ghosts with the item you retrieve from the city. 
 ///Dying at this point brings you back to a Game Over screen where you can go back to a previously saved file or start back from the beginning.///
 ///All monsters drop items and are randomly generated///
 
