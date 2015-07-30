@@ -8,15 +8,20 @@ commands = 'Valid commands include up, down, left, right, look, use, help, open,
 
 @app.route('/', methods=["GET"])
 def main():
-    user = 'fooman'
-    return render_template('main.html', TXT=user)    
+    user = 'SKnight'
+    return render_template('main.html', TXT=user)
+
+@app.route('/SKnight/', methods=["GET"])
+def SKnight():
+    user = 'SKnight'
+    return render_template('index.html', TXT=user)
 
 @app.route('/basement/', methods=["POST","GET"])
 def basement():
     inputTXT = ''
     outputTXT = ''
     story = ''
-    user = 'fooman'
+    user = 'SKnight'
     bot = ''
     
     if request.method == "GET":
@@ -59,7 +64,7 @@ def woods():
     inputTXT = ''
     outputTXT = ''
     story = ''
-    user = 'fooman'
+    user = 'SKnight'
     bot = ''
     
     if request.method == "GET":
@@ -109,7 +114,7 @@ def city():
     inputTXT = ''
     outputTXT = ''
     story = ''
-    user = 'fooman'
+    user = 'SKnight'
     bot = ''
     
     
@@ -155,7 +160,7 @@ def mansion():
     inputTXT = ''
     outputTXT = ''
     story = ''
-    user = 'fooman'
+    user = 'SKnight'
     bot = ''
     
     
@@ -203,7 +208,7 @@ def maze():
     inputTXT = ''
     outputTXT = ''
     story = ''
-    user = 'fooman'
+    user = 'SKnight'
     bot = ''
     
     if request.method == "GET":
@@ -251,7 +256,7 @@ def maze():
             story = "The golden shovel is ready for you."
         if inputTXT == "get golden shovel":
             bot = "You became the master shoveler."
-            bot += "<a href= '/'>Play Again></a>"
+            bot += "<a href= '/'>Play Again</a>"
             bot += "<a href= '/shovels/'>Shovel! End</a>"
             
         append_file('log.txt', inputTXT, bot )
@@ -262,7 +267,7 @@ def maze():
 @app.route('/shovels/', methods=["POST","GET"])
 def shovels():
     
-    user = 'fooman'
+    user = 'SKnight'
     return render_template('shovels.html', TXT=user)    
 
     

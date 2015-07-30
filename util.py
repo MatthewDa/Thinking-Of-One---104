@@ -6,7 +6,7 @@ def demo(uinput):
     str1 = delay_type('Hello, traveler.\n', interval=0.1)
     str2 = delay_type('I see you want ' + item + '.', interval=.25)
 
-def delay_type(str, interval):
+def delay(str, interval):
     for letter in str:
         sys.stdout.write(letter)
         time.sleep(interval)
